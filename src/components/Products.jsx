@@ -12,7 +12,8 @@ import perfume2 from "../assets/perfume2.jpeg";
 import perfume3 from "../assets/perfume3.jpeg";
 import hairmask from "../assets/hairmask.jpeg";
 import { addToCart } from "./cartStorage";
-import { addToWishlist } from "../components/WishlistStorage";
+import { addToWishlist } from "./WishlistStorage";
+// import { addToWishlist } from "./WishlistStorage";
 const products = [
   {
     id: 1,
