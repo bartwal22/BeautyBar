@@ -1,0 +1,74 @@
+.blog-section2 {
+  font-family: "Segoe UI", sans-serif;
+  padding: 50px 20px;
+  color: #000;
+  text-align: center;
+}
+
+.blog-cards2 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  max-width: 10000px;
+  margin: 20px auto;
+}
+
+.blog-card2 {
+  background: #fff;
+  width: 500px;
+  text-align: left;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+}
+
+.blog-card2:hover {
+  transform: translateY(-5px);
+}
+
+.image-container2 {
+  position: relative;
+}
+
+.image-container2 img {
+  width: 100%;
+  height: 300px;
+  object-fit: cover;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.date-badge2 {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: white;
+  color: black;
+  font-weight: bold;
+  padding: 5px 8px;
+  font-size: 13px;
+  text-align: center;
+  border-radius: 5px;
+  line-height: 1.2;
+  box-shadow: 0 1px 4px rgba(0, 0, 0, 0.1);
+}
+
+.blog-card2 h3 {
+  font-size: 18px;
+  margin: 15px;
+}
+
+.blog-card2 p {
+  font-size: 14px;
+  margin: 0 15px 10px;
+}
+
+.btn2 {
+  color: #e48c9b;
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0 15px 15px;
+  cursor: pointer;
+}

@@ -1,0 +1,120 @@
+.product-detail-page {
+  padding: 40px 20px;
+  background-color: #fff0f5;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  min-height: 100vh;
+}
+
+.product-detail-container {
+  display: flex;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  background: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  border-radius: 16px;
+  overflow: hidden;
+}
+
+.product-image-section {
+  flex: 1;
+  background-color: #fafafa;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+}
+
+.detail-image {
+  width: 100%;
+  max-width: 400px;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.product-info-section {
+  flex: 1;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.detail-title {
+  font-size: 32px;
+  color: #d63384;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.detail-price {
+  font-size: 28px;
+  font-weight: bold;
+  color: #333;
+}
+
+.old-price {
+  text-decoration: line-through;
+  color: #888;
+  margin-left: 15px;
+  font-size: 20px;
+}
+
+.detail-description {
+  margin-top: 20px;
+  font-size: 16px;
+  color: #555;
+  line-height: 1.5;
+}
+
+.add-to-cart-button {
+  margin-top: 40px;
+  padding: 14px 40px;
+  font-size: 18px;
+  background-color: hotpink;
+  color: white;
+  border: none;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+  align-self: flex-start;
+  font-weight: 600;
+  box-shadow: 0 5px 15px rgba(255, 105, 180, 0.4);
+}
+
+.add-to-cart-button:hover {
+  background-color: deeppink;
+  box-shadow: 0 8px 20px rgba(255, 20, 147, 0.6);
+}
+.contact-social {
+  flex: 1 1 10%;
+  margin-top: 1rem;
+}
+
+.contact-social1 h4 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  margin-bottom: 0.8rem;
+  color: #111;
+}
+
+.social-icons-2 {
+  display: flex;
+  gap: 10px;
+}
+
+.social-icons-2 svg {
+  font-size: 1.2rem;
+  color: #333;
+  background: #f4f4f4;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background 0.3s;
+  cursor: pointer;
+}
+
+.social-icons-2 svg:hover {
+  background: #e91e63;
+  color: #fff;
+}

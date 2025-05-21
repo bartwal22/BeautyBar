@@ -1,0 +1,59 @@
+.disc-container {
+  width: 100vw;
+  height: 100vh;
+  background-color: #f7b8a9;
+  display: flex;
+  overflow: hidden;
+}
+.disc-text {
+  padding-left: 50px;
+}
+.text-section {
+  flex: 1;
+  padding: 90px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fbe9e7;
+  font-family: "Segoe UI", sans-serif;
+}
+
+.discount-label {
+  font-size: 3rem;
+  font-family: "Dancing Script", cursive;
+  color: #d35f8d;
+  padding-top: 80px;
+  margin-bottom: 10px;
+}
+
+.discount-title {
+  font-size: 5rem;
+  font-weight: 600;
+  margin: 10px 0;
+  line-height: 1.2;
+  color: #111;
+}
+.highlight {
+  color: #d35f8d;
+}
+
+.discount-subtext {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #5f5d5d;
+}
+
+.disc-button {
+  margin-top: 30px;
+  padding: 19px 35px;
+  background-color: black;
+  color: white;
+  border: none;
+  font-size: 1rem;
+  border-radius: 0;
+  cursor: pointer;
+}
+
+.disc-button:hover {
+  background-color: #333;
+}

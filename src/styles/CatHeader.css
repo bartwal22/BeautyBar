@@ -1,0 +1,36 @@
+.cat-header {
+  background-image: url("../assets/catheader2.jpeg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  width: 100%;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-top: 70px;
+}
+
+.cat-overlay {
+  text-align: center;
+  color: #333;
+  padding: 20px;
+}
+
+.cat-title {
+  font-size: 50px;
+  font-weight: 450;
+  letter-spacing: 2px;
+  margin: 10px;
+}
+
+.cat-breadcrumb {
+  font-size: 16px;
+  color: #555;
+  margin-top: 10px;
+}
+
+.cat-breadcrumb span {
+  color: #e91e63;
+}

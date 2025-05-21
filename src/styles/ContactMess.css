@@ -1,0 +1,99 @@
+.cont-container {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  min-height: 100vh;
+  background-color: #f7b8a9;
+  overflow: hidden;
+  font-family: "Segoe UI", sans-serif;
+}
+
+/* Image section */
+.image-section {
+  flex: 1;
+  background-color: #f7b8a9;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.cont-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Form section */
+.form-section {
+  flex: 1;
+  background-color: #eccab5;
+  display: flex;
+  align-items: center;
+  padding: 60px;
+}
+
+.cont-text {
+  width: 100%;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.cont-label {
+  font-size: 2.5rem;
+  font-family: "Dancing Script", cursive;
+  color: #d35f8d;
+  margin-bottom: 10px;
+}
+
+.cont-title {
+  font-size: 3rem;
+  font-weight: 600;
+  margin: 10px 0;
+  line-height: 1.2;
+  color: #111;
+}
+
+.cont-subtext {
+  margin-top: 20px;
+  font-size: 1.1rem;
+  color: #5f5d5d;
+  line-height: 1.6;
+}
+
+.input-area {
+  margin-top: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.input-area input,
+.input-area textarea {
+  padding: 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  background-color: #fff;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+.input-area textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.cont-button {
+  margin-top: 20px;
+  padding: 12px 20px;
+  background-color: #d35f8d;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.cont-button:hover {
+  background-color: #b54870;
+}

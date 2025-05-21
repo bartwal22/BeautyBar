@@ -1,0 +1,55 @@
+.home-container {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.home-image {
+  width: 100%;
+}
+
+.image-overlay {
+  position: absolute;
+  top: 60%;
+  left: 4%;
+  transform: translateY(-50%);
+  color: #333;
+  max-width: 500px;
+  z-index: 2;
+}
+
+.tagline {
+  font-family: "Dancing Script", cursive;
+  font-size: 3rem;
+  color: #c07777;
+}
+.headline {
+  width: 200%;
+  margin-top: -80px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  font-size: 5rem;
+  color: #111;
+}
+
+.description {
+  font-size: 1rem;
+  color: #7c7c7c;
+  margin-top: -70px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin-bottom: 20px;
+}
+
+.shop-button {
+  background-color: black;
+  color: white;
+  padding: 20px 30px;
+  border: none;
+  font-weight: bold;
+  border-radius: 0;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.shop-button:hover {
+  background-color: #b76e79;
+}
