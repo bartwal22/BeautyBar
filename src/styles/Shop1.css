@@ -118,3 +118,18 @@
   background: #e91e63;
   color: #fff;
 }
+@media (max-width: 900px) {
+  .product-detail-container {
+    flex-direction: column;
+    text-align: center;
+    padding: 20px;
+  }
+
+  .product-image-section {
+    padding: 20px;
+  }
+
+  .detail-image {
+    max-width: 80%;
+  }
+}

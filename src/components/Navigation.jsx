@@ -1,18 +1,27 @@
-import React from "react";
+import React, { useState } from "react";
 import "../styles/Navigation.css";
-import { FcCloseUpMode } from "react-icons/fc";
+import { FaBars, FaTimes } from "react-icons/fa"; // hamburger + close icons
 
 export default function Navigation() {
+  const [menuOpen, setMenuOpen] = useState(false);
+
   return (
     <div className="main-navigation">
-      {/* Second Navigation Bar */}
       <div className="secondary-nav">
+        {/* Brand Name */}
         <div className="brand-container">
           <h2 className="brand-name" style={{ paddingLeft: "15px" }}>
             Beauty Bar
           </h2>
         </div>
-        <nav className="nav-links">
+
+        {/* Hamburger Icon (shows only on mobile) */}
+        <div className="menu-toggle" onClick={() => setMenuOpen(!menuOpen)}>
+          {menuOpen ? <FaTimes /> : <FaBars />}
+        </div>
+
+        {/* Navigation Links */}
+        <nav className={`nav-links ${menuOpen ? "open" : ""}`}>
           <a href="/" className="active">
             Home
           </a>
@@ -22,6 +31,8 @@ export default function Navigation() {
           <a href="/blog">Blog</a>
           <a href="/contact">Contact</a>
         </nav>
+
+        {/* Icons */}
         <div className="nav-icons">
           <a href="#">
             <span>🔍</span>

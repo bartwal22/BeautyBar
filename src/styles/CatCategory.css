@@ -70,3 +70,26 @@
 .cat-card:hover img {
   transform: scale(1.1);
 }
+@media (max-width: 992px) {
+  .cat-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .cat-card img {
+    height: 450px;
+  }
+}
+
+@media (max-width: 600px) {
+  .cat-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cat-card img {
+    height: 350px;
+  }
+
+  .cat-title {
+    font-size: 18px;
+  }
+}

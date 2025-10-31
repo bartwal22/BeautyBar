@@ -57,3 +57,55 @@
 .disc-button:hover {
   background-color: #333;
 }
+@media (max-width: 992px) {
+  .disc-container {
+    flex-direction: column;
+    height: auto;
+    padding: 40px 0;
+  }
+
+  .text-section {
+    padding: 60px 30px;
+    text-align: center;
+  }
+
+  .disc-text {
+    padding-left: 0;
+  }
+
+  .discount-label {
+    font-size: 2.2rem;
+    padding-top: 20px;
+  }
+
+  .discount-title {
+    font-size: 3.5rem;
+  }
+
+  .discount-subtext {
+    font-size: 1rem;
+  }
+
+  .disc-button {
+    padding: 15px 30px;
+  }
+}
+
+@media (max-width: 600px) {
+  .discount-label {
+    font-size: 1.8rem;
+  }
+
+  .discount-title {
+    font-size: 2.5rem;
+  }
+
+  .discount-subtext {
+    font-size: 0.9rem;
+  }
+
+  .disc-button {
+    width: 80%;
+    font-size: 0.9rem;
+  }
+}

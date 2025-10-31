@@ -97,3 +97,66 @@
 .cont-button:hover {
   background-color: #b54870;
 }
+@media (max-width: 992px) {
+  .cont-container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    order: 1;
+    height: 50vh;
+  }
+
+  .form-section {
+    order: 2;
+    padding: 40px 20px;
+  }
+
+  .cont-title {
+    font-size: 2.2rem;
+  }
+
+  .cont-label {
+    font-size: 2rem;
+  }
+
+  .cont-subtext {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .cont-container {
+    flex-direction: column;
+  }
+
+  .image-section {
+    height: 40vh;
+  }
+
+  .cont-text {
+    padding: 0 10px;
+  }
+
+  .cont-title {
+    font-size: 1.8rem;
+  }
+
+  .cont-label {
+    font-size: 1.6rem;
+  }
+
+  .cont-subtext {
+    font-size: 0.95rem;
+  }
+
+  .input-area input,
+  .input-area textarea {
+    font-size: 0.9rem;
+  }
+
+  .cont-button {
+    width: 100%;
+    padding: 14px;
+  }
+}

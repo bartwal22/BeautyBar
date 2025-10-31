@@ -88,3 +88,81 @@
   font-size: 14px;
   text-align: center;
 }
+/* ---------------- Responsive Design ---------------- */
+
+/* Medium screens (≤992px) */
+@media (max-width: 992px) {
+  .footer {
+    padding: 30px 40px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 20px;
+    text-align: center;
+  }
+
+  .footer-logo {
+    font-size: 28px;
+  }
+
+  .footer-columns {
+    justify-content: center;
+  }
+}
+
+/* Tablets (≤768px) */
+@media (max-width: 768px) {
+  .footer {
+    padding: 30px 25px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .footer-column {
+    margin: 10px 0;
+    width: 100%;
+  }
+
+  .social-media,
+  .payment-methods {
+    margin-bottom: 15px;
+  }
+}
+
+/* Mobile devices (≤480px) */
+@media (max-width: 480px) {
+  .footer {
+    padding: 25px 15px;
+  }
+
+  .footer-logo {
+    font-size: 24px;
+  }
+
+  .footer-top {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .footer-columns {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .footer-column h4 {
+    font-size: 16px;
+  }
+
+  .footer-column ul li {
+    font-size: 14px;
+  }
+
+  .footer-bottom {
+    font-size: 12px;
+  }
+}

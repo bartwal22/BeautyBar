@@ -34,3 +34,39 @@
 .blog-breadcrumb1 span {
   color: #e91e63;
 }
+@media (max-width: 768px) {
+  .blog-header1 {
+    height: 250px;
+    margin-top: 60px;
+  }
+
+  .blog-title1 {
+    font-size: 36px;
+  }
+
+  .blog-breadcrumb1 {
+    font-size: 14px;
+  }
+}
+
+/* Mobile devices (480px and below) */
+@media (max-width: 480px) {
+  .blog-header1 {
+    height: 200px;
+    margin-top: 50px;
+  }
+
+  .blog-overlay1 {
+    padding: 10px;
+  }
+
+  .blog-title1 {
+    font-size: 26px;
+    letter-spacing: 1px;
+    margin: 5px 0;
+  }
+
+  .blog-breadcrumb1 {
+    font-size: 12px;
+  }
+}

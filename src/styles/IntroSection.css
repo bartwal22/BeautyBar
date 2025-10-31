@@ -75,3 +75,128 @@
   cursor: pointer;
   z-index: 2;
 }
+/* ------------------ RESPONSIVE DESIGN ------------------ */
+
+/* For large tablets (≤992px) */
+@media (max-width: 992px) {
+  .intro-section {
+    padding: 40px 20px;
+  }
+
+  .row {
+    gap: 30px;
+  }
+
+  .collection-title,
+  .about-title {
+    font-size: 30px;
+  }
+
+  .collection-subtitle,
+  .about-subtitle {
+    font-size: 22px;
+  }
+
+  .collection-desc,
+  .about-desc {
+    font-size: 15px;
+  }
+
+  .image-col img,
+  .video-display {
+    height: 450px;
+  }
+}
+
+/* For tablets (≤768px) */
+@media (max-width: 768px) {
+  .intro-section {
+    padding: 30px 15px;
+  }
+
+  .row {
+    flex-direction: column;
+    gap: 25px;
+    text-align: center;
+  }
+
+  .col {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .collection-title,
+  .about-title {
+    font-size: 26px;
+    margin-bottom: 15px;
+  }
+
+  .collection-subtitle,
+  .about-subtitle {
+    font-size: 20px;
+    margin-bottom: 8px;
+  }
+
+  .collection-desc,
+  .about-desc {
+    font-size: 14px;
+    margin: 0 auto 15px;
+    width: 90%;
+  }
+
+  .collection-button,
+  .video-button {
+    padding: 10px 20px;
+    font-size: 14px;
+  }
+
+  .image-col img,
+  .video-display {
+    height: 350px;
+  }
+
+  .custom-play-button {
+    font-size: 35px;
+  }
+}
+
+/* For mobile devices (≤480px) */
+@media (max-width: 480px) {
+  .intro-section {
+    padding: 20px 10px;
+  }
+
+  .row {
+    gap: 20px;
+  }
+
+  .collection-title,
+  .about-title {
+    font-size: 22px;
+  }
+
+  .collection-subtitle,
+  .about-subtitle {
+    font-size: 18px;
+  }
+
+  .collection-desc,
+  .about-desc {
+    font-size: 13px;
+  }
+
+  .collection-button,
+  .video-button {
+    padding: 8px 18px;
+    font-size: 13px;
+  }
+
+  .image-col img,
+  .video-display {
+    height: 250px;
+  }
+
+  .custom-play-button {
+    font-size: 30px;
+  }
+}

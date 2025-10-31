@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import "../styles/NewArrivals.css";
 import perfume1 from "../assets/perfume1.jpeg";
 import bodyscrub1 from "../assets/bodyscrub1.jpeg";
@@ -26,7 +26,20 @@ const products = [
 
 const NewArrivals = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
-  const itemsToShow = 3;
+  const [itemsToShow, setItemsToShow] = useState(3);
+
+  // Adjust number of visible items based on screen width
+  useEffect(() => {
+    const updateItemsToShow = () => {
+      if (window.innerWidth < 600) setItemsToShow(1); // mobile
+      else if (window.innerWidth < 992) setItemsToShow(2); // tablet
+      else setItemsToShow(3); // desktop
+    };
+
+    updateItemsToShow();
+    window.addEventListener("resize", updateItemsToShow);
+    return () => window.removeEventListener("resize", updateItemsToShow);
+  }, []);
 
   const getVisibleProducts = () => {
     const visible = [];
@@ -50,8 +63,8 @@ const NewArrivals = () => {
         <h4 className="na-subtitle">Cosmetics</h4>
         <h1 className="na-title">New Arrivals</h1>
         <p className="na-description">
-          Nourish your skin with toxin-free cosmetic products. With the offers
-          that you can’t refuse.
+          Nourish your skin with toxin-free cosmetic products. With offers you
+          can’t refuse.
         </p>
       </div>
 

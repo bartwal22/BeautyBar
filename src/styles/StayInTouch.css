@@ -69,3 +69,100 @@
   font-weight: bold;
   cursor: pointer;
 }
+
+/* -------------------- Responsive Styling -------------------- */
+
+/* Tablet (≤1024px) */
+@media (max-width: 1024px) {
+  .stay-in-touch {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .overlay-content {
+    left: 0;
+    max-width: 400px;
+  }
+
+  .text-overlay {
+    position: static;
+    width: 100%;
+    transform: none;
+    background-color: transparent;
+    padding: 20px;
+  }
+
+  .text-overlay h2 {
+    font-size: 28px;
+  }
+}
+
+/* Mobile (≤768px) */
+@media (max-width: 768px) {
+  .stay-in-touch {
+    flex-direction: column;
+    margin: 0;
+    padding: 2rem 1rem;
+  }
+
+  .overlay-content {
+    position: relative;
+    left: 0;
+    height: auto;
+  }
+
+  .background-image {
+    height: 250px;
+  }
+
+  .text-overlay {
+    position: static;
+    text-align: center;
+    background-color: transparent;
+    width: 100%;
+    padding: 1rem;
+  }
+
+  .text-overlay h2 {
+    font-size: 24px;
+  }
+
+  .text-overlay p {
+    font-size: 14px;
+  }
+
+  .subscribe-box {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .subscribe-box input {
+    width: 100%;
+    min-width: unset;
+  }
+
+  .subscribe-box button {
+    width: 100%;
+  }
+}
+
+/* Small mobile (≤480px) */
+@media (max-width: 480px) {
+  .background-image {
+    height: 200px;
+  }
+
+  .text-overlay h2 {
+    font-size: 20px;
+  }
+
+  .subscribe-box input {
+    font-size: 13px;
+    padding: 10px;
+  }
+
+  .subscribe-box button {
+    font-size: 13px;
+    padding: 10px;
+  }
+}

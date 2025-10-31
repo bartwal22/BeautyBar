@@ -34,3 +34,17 @@
 .wish-breadcrumb span {
   color: #e91e63;
 }
+@media (max-width: 768px) {
+  .wish-header {
+    height: 300px;
+    margin-top: 60px;
+  }
+
+  .wish-title {
+    font-size: 32px;
+  }
+
+  .wish-breadcrumb {
+    font-size: 14px;
+  }
+}

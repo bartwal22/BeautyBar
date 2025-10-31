@@ -53,3 +53,92 @@
 .shop-button:hover {
   background-color: #b76e79;
 }
+/* ---------------- Responsive Design ---------------- */
+
+/* Tablets (≤992px) */
+@media (max-width: 992px) {
+  .image-overlay {
+    top: 55%;
+    left: 6%;
+    max-width: 400px;
+  }
+
+  .tagline {
+    font-size: 2.5rem;
+  }
+
+  .headline {
+    font-size: 4rem;
+    width: 150%;
+    margin-top: -60px;
+  }
+
+  .description {
+    font-size: 0.95rem;
+    margin-top: -50px;
+  }
+
+  .shop-button {
+    padding: 15px 25px;
+    font-size: 0.95rem;
+  }
+}
+
+/* Small tablets (≤768px) */
+@media (max-width: 768px) {
+  .image-overlay {
+    top: 50%;
+    left: 8%;
+    max-width: 350px;
+  }
+
+  .tagline {
+    font-size: 2.2rem;
+  }
+
+  .headline {
+    font-size: 3rem;
+    width: 120%;
+    margin-top: -40px;
+  }
+
+  .description {
+    font-size: 0.9rem;
+    margin-top: -30px;
+  }
+
+  .shop-button {
+    padding: 12px 20px;
+  }
+}
+
+/* Mobile (≤480px) */
+@media (max-width: 480px) {
+  .image-overlay {
+    top: 50%;
+    left: 5%;
+    max-width: 90%;
+    text-align: center;
+    transform: translateY(-40%);
+  }
+
+  .tagline {
+    font-size: 1.8rem;
+  }
+
+  .headline {
+    font-size: 2.3rem;
+    width: 100%;
+    margin-top: -20px;
+  }
+
+  .description {
+    font-size: 0.85rem;
+    margin-top: -10px;
+  }
+
+  .shop-button {
+    padding: 10px 18px;
+    font-size: 0.9rem;
+  }
+}

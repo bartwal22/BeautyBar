@@ -13,7 +13,6 @@ import Wishlist from "./components/Wishlist";
 import Cart from "./components/Cart";
 import ImageGallery from "./components/ImageGallery";
 import Footer from "./components/Footer";
-
 function App() {
   return (
     <Router>

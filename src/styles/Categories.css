@@ -102,3 +102,34 @@
   color: #f9d5e5;
   cursor: pointer;
 }
+@media (max-width: 992px) {
+  .categories-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-card {
+    height: 500px;
+  }
+
+  .overlay-title {
+    font-size: 26px;
+  }
+}
+
+@media (max-width: 600px) {
+  .categories-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .category-card {
+    height: 400px;
+  }
+
+  .overlay-title {
+    font-size: 22px;
+  }
+
+  .overlay-link {
+    font-size: 14px;
+  }
+}
