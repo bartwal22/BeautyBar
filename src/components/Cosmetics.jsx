@@ -1,6 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import "../styles/Cosmetics.css";
-import { FaChevronLeft, FaChevronRight } from "react-icons/fa";
 
 import foundation from "../assets/foundation.jpeg";
 import bodylotion from "../assets/bodylotion.jpeg";
@@ -29,6 +28,7 @@ import logo2 from "../assets/logo2.svg";
 import logo3 from "../assets/logo3.svg";
 import logo4 from "../assets/logo4.svg";
 import logo5 from "../assets/logo5.svg";
+
 const products = [
   {
     name: "Foundation",
@@ -45,7 +45,7 @@ const products = [
     category: "SPA",
   },
   {
-    name: " Body Scrub",
+    name: "Body Scrub",
     image: bodyscrub1,
     tags: ["SALE"],
     price: "$25",
@@ -70,7 +70,7 @@ const products = [
     image: bodylotion,
     tags: ["SALE", "NEW"],
     price: "$15",
-    category: ["Skin care", "SPA"],
+    category: "Skin care",
   },
   {
     name: "Eye Mask",
@@ -158,7 +158,7 @@ const products = [
     category: "Hair care",
   },
   {
-    name: "Deep Vita C Capsule Cream ",
+    name: "Deep Vita C Capsule Cream",
     image: cream,
     tags: [],
     price: "$43",
@@ -190,16 +190,7 @@ const categories = [
 ];
 
 export default function Cosmetics() {
-  const sliderRef = useRef(null);
   const [activeCategory, setActiveCategory] = useState("Make Up");
-
-  const scrollLeft = () => {
-    sliderRef.current.scrollBy({ left: -300, behavior: "smooth" });
-  };
-
-  const scrollRight = () => {
-    sliderRef.current.scrollBy({ left: 300, behavior: "smooth" });
-  };
 
   const filteredProducts = products.filter((product) =>
     product.category.includes(activeCategory)
@@ -214,6 +205,7 @@ export default function Cosmetics() {
         that you can't refuse.
       </p>
 
+      {/* ✅ Category Buttons */}
       <div className="cosmetics-buttons">
         {categories.map((category) => (
           <button
@@ -228,40 +220,30 @@ export default function Cosmetics() {
         ))}
       </div>
 
-      <div className="slider-controls">
-        <button className="slider-btn" onClick={scrollLeft}>
-          <FaChevronLeft />
-        </button>
-
-        <div className="product-slider-wrapper" ref={sliderRef}>
-          <div className="product-slider">
-            {filteredProducts.map((product, index) => (
-              <div className="product-card" key={index}>
-                <div className="product-image">
-                  <img src={product.image} alt={product.name} />
-                  <div className="product-tags">
-                    {product.tags.includes("SALE") && (
-                      <span className="tag sale">SALE</span>
-                    )}
-                    {product.tags.includes("NEW") && (
-                      <span className="tag new">NEW</span>
-                    )}
-                  </div>
-                </div>
-                <div className="product-info">
-                  <h4 className="product-name">{product.name}</h4>
-                  <p className="product-price">{product.price}</p>
-                </div>
+      {/* ✅ Responsive Grid */}
+      <div className="product-grid">
+        {filteredProducts.map((product, index) => (
+          <div className="product-card" key={index}>
+            <div className="product-image">
+              <img src={product.image} alt={product.name} />
+              <div className="product-tags">
+                {product.tags.includes("SALE") && (
+                  <span className="tag sale">SALE</span>
+                )}
+                {product.tags.includes("NEW") && (
+                  <span className="tag new">NEW</span>
+                )}
               </div>
-            ))}
+            </div>
+            <div className="product-info">
+              <h4 className="product-name">{product.name}</h4>
+              <p className="product-price">{product.price}</p>
+            </div>
           </div>
-        </div>
-
-        <button className="slider-btn" onClick={scrollRight}>
-          <FaChevronRight />
-        </button>
+        ))}
       </div>
 
+      {/* ✅ Brand Logos */}
       <div className="brand-logos">
         <div className="logo-container">
           <img src={logo1} alt="Khaled Fawkes" />
